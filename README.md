@@ -4,6 +4,6 @@
 
 <h1 align="center">PrimeDAO Liquidity Mining</h1>
 
-# 🤖 Liquidity Mining contracts for PrimeDAO's PRIME token
+> 🤖 Liquidity Mining contracts for PrimeDAO's PRIME token
 
 
