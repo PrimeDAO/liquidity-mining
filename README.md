@@ -10,7 +10,7 @@ In order to bootstrap liquidity for the PRIME token, PrimeDAO will initiate a li
 
 Over this period, 500,000 PRIME (approximately 16,666 PRIME/day) will be distributed to participants who stake BPRIME in this contract.
 
-`StakingRewards.sol` contract is a fork of the [StakingRewards contract](https://github.com/Synthetixio/synthetix/blob/develop/contracts/StakingRewards.sol) developed by [Synthetix](https://github.com/Synthetixio/synthetix) with few adjustments made by PrimeDAO team in order to best suit our needs. The key differences are:
+`StakingRewards.sol` contract is a fork of the [StakingRewards contract](https://github.com/Synthetixio/synthetix/blob/develop/contracts/StakingRewards.sol) developed by [Synthetix](https://github.com/Synthetixio/synthetix) with few adjustments made to best suit PrimeDAO's needs. The key differences are:
 
 - The `notifyRewardAmount` function is called only on contract initialization. Since the rewards scheme runs for only a month with a fixed reward rate, there is no need to top up the reward over time. The function has thus also been made `internal` to reduce the overall attack surface of the contract.
 - The contract no longer inherits from `RewardDistributionRecipient`, as this is no longer needed due to the changes with `notifyRewardAmount`.
